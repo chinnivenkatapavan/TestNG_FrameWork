@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-LoginPage" class="navigator-link">
-              <span class="suite-name border-failed">LoginPage</span>
+              <span class="suite-name border-skipped">LoginPage</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">6 methods,  2 skipped,  4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-LoginPage" class="hide-methods failed suite-LoginPage"> (hide)</a> <!-- hide-methods failed suite-LoginPage -->
-                      <a href="#" panel-name="suite-LoginPage" class="show-methods failed suite-LoginPage"> (show)</a> <!-- show-methods failed suite-LoginPage -->
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-LoginPage" class="hide-methods skipped suite-LoginPage"> (hide)</a> <!-- hide-methods skipped suite-LoginPage -->
+                      <a href="#" panel-name="suite-LoginPage" class="show-methods skipped suite-LoginPage"> (show)</a> <!-- show-methods skipped suite-LoginPage -->
                     </span>
-                    <div class="method-list-content failed suite-LoginPage">
+                    <div class="method-list-content skipped suite-LoginPage">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)">verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-LoginPage -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-LoginPage -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +122,7 @@
                     <div class="method-list-content passed suite-LoginPage">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)">verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,7 +132,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)">verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginPage" title="com.askomdch.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPagewithAutoLogAndScreenShot">verifyLoginPagewithAutoLogAndScreenShot</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LoginPage -->
@@ -142,31 +152,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LoginPage" class="panel LoginPage">
-          <div class="suite-LoginPage-class-failed">
+          <div class="suite-LoginPage-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.askomdch.tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginPage">
-                  </a> <!-- verifyLoginPage -->
-                  <span class="method-name">verifyLoginPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Account – AskOmDc] but found [Account – AskOmDch]
-	at com.askomdch.tests.LoginTest.verifyLoginPage(LoginTest.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-LoginPage-class-failed -->
-          <div class="suite-LoginPage-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.askomdch.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -176,6 +164,80 @@
                   </a> <!-- verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.) -->
                   <span class="method-name">verfiyLoginCredentials</span>
                   <span class="parameters">(b@gmail.com,1234567890,Unknown email address. Check again or try your username.)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&amp;u=https%3A//askomdch.com/account/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20askomdch.com.&amp;a=
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0b48893f-b727-4cdf-b7ee-2356e71aa8bb, clickElement {id=25afbf78-6f22-49e5-be32-5aade01e18bb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29092, moz:profile: C:\Users\vchinni\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (0b48893f-b727-4cdf-b7ee-2356e71aa8bb)] -&gt; xpath: //a[@class=&quot;menu-link&quot; and text()=&apos;Account&apos;]]
+Session ID: 0b48893f-b727-4cdf-b7ee-2356e71aa8bb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.askomdch.pages.CommonActions.navigateTab(CommonActions.java:22)
+	at com.askomdch.pages.LoginPage.oPenAccountTab(LoginPage.java:23)
+	at com.askomdch.tests.LoginTest.verfiyLoginCredentials(LoginTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">
+                  </a> <!-- verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...) -->
+                  <span class="method-name">verfiyLoginCredentials</span>
+                  <span class="parameters">(beginner_Framework@gmail.com,12354658910,Error: The password you entered for the email address beginner_Framework@gmail.com is incorrect. Lost your password?)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&amp;u=https%3A//askomdch.com/account/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20askomdch.com.&amp;a=
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0b48893f-b727-4cdf-b7ee-2356e71aa8bb, clickElement {id=75e7c1ab-7ca4-4fbc-b18f-b31111ddf056}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29092, moz:profile: C:\Users\vchinni\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (0b48893f-b727-4cdf-b7ee-2356e71aa8bb)] -&gt; xpath: //a[@class=&quot;menu-link&quot; and text()=&apos;Account&apos;]]
+Session ID: 0b48893f-b727-4cdf-b7ee-2356e71aa8bb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.askomdch.pages.CommonActions.navigateTab(CommonActions.java:22)
+	at com.askomdch.pages.LoginPage.oPenAccountTab(LoginPage.java:23)
+	at com.askomdch.tests.LoginTest.verfiyLoginCredentials(LoginTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginPage-class-skipped -->
+          <div class="suite-LoginPage-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.askomdch.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">
+                  </a> <!-- verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...) -->
+                  <span class="method-name">verfiyLoginCredentials</span>
+                  <span class="parameters">(beginner_Framework@gmail.com,12354658910,Error: The password you entered for the email address beginner_Framework@gmail.com is incorrect. Lost your password?)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,10 +250,17 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)">
-                  </a> <!-- verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...) -->
+                  <a name="verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)">
+                  </a> <!-- verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.) -->
                   <span class="method-name">verfiyLoginCredentials</span>
-                  <span class="parameters">(beginner_Framework@gmail.com,12354658910,Error: The password you entered for the email address beginner_Framework@gmail.com is incorrect. Lost your password?)</span>
+                  <span class="parameters">(b@gmail.com,1234567890,Unknown email address. Check again or try your username.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPagewithAutoLogAndScreenShot">
+                  </a> <!-- verifyLoginPagewithAutoLogAndScreenShot -->
+                  <span class="method-name">verifyLoginPagewithAutoLogAndScreenShot</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,7 +276,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;LoginPage&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.askomdch.listener.ExtentListener&quot;/&gt;
     &lt;listener class-name=&quot;com.askomdch.listener.ScreenshotListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.askomdch.listener.RetryListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;VerifyLoginPage&quot;&gt;
     &lt;classes&gt;
@@ -251,28 +322,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verfiyLoginCredentials')
 data.setCell(0, 2, 'com.askomdch.tests.LoginTest')
-data.setCell(0, 3, 5091);
+data.setCell(0, 3, 53341);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verfiyLoginCredentials')
 data.setCell(1, 2, 'com.askomdch.tests.LoginTest')
-data.setCell(1, 3, 4085);
+data.setCell(1, 3, 19174);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verfiyLoginCredentials')
 data.setCell(2, 2, 'com.askomdch.tests.LoginTest')
-data.setCell(2, 3, 3835);
+data.setCell(2, 3, 10824);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginPage')
+data.setCell(3, 1, 'verfiyLoginCredentials')
 data.setCell(3, 2, 'com.askomdch.tests.LoginTest')
-data.setCell(3, 3, 783);
+data.setCell(3, 3, 3783);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verfiyLoginCredentials')
+data.setCell(4, 2, 'com.askomdch.tests.LoginTest')
+data.setCell(4, 3, 2249);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginPagewithAutoLogAndScreenShot')
+data.setCell(5, 2, 'com.askomdch.tests.LoginTest')
+data.setCell(5, 3, 704);
 window.suiteTableData['LoginPage']= { tableData: data, tableDiv: 'times-div-LoginPage'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-LoginPage">
               </div> <!-- times-div-LoginPage -->
             </div> <!-- times-div -->
@@ -305,41 +384,55 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">7607 ms</span>
+                <span class="method-start">7522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)</span>
-                <span class="method-start">7615 ms</span>
+                <span class="method-start">7526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">12706 ms</span>
+                <span class="method-start">18364 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verfiyLoginCredentials(b@gmail.com, 1234567890, Unknown email address. Check again or try your username.)</span>
+                <span class="method-start">18366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpPage</span>
+                <span class="method-start">71709 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)</span>
-                <span class="method-start">12706 ms</span>
+                <span class="method-start">71711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpPage</span>
+                <span class="method-start">73970 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verfiyLoginCredentials(beginner_Framework@gmail.com, 12354658910, Error: The password you entered for the email address beg...)</span>
+                <span class="method-start">73971 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verfiyLoginCredentials(beginner_Framework@gmail.com, 1234567890, )</span>
-                <span class="method-start">16543 ms</span>
+                <span class="method-start">93148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">16543 ms</span>
+                <span class="method-start">93148 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">20631 ms</span>
+                <span class="method-start">96933 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginPage</span>
-                <span class="method-start">20632 ms</span>
+                <span class="method-name">verifyLoginPagewithAutoLogAndScreenShot</span>
+                <span class="method-start">96933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closingBrowser</span>
-                <span class="method-start">21678 ms</span>
+                <span class="method-start">97644 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

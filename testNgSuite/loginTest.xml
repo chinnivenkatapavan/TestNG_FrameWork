@@ -3,7 +3,9 @@
 
 <suite name="LoginPage">
     <listeners>
+        <listener class-name="com.askomdch.listener.ExtentListener"/>
         <listener class-name="com.askomdch.listener.ScreenshotListener"/>
+        <listener class-name="com.askomdch.listener.RetryListener"/>
     </listeners>
     <test name="VerifyLoginPage">
         <classes>
